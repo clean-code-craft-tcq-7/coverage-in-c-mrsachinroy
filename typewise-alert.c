@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 
-TempLimit TempLimitCoolingType[3] = {
+const TempLimit TempLimitCoolingType[3] = {
   {0,35},
   {0,45},
   {0,40}
@@ -48,16 +48,16 @@ void sendToController(BreachType breachType) {
 }
 
 void sendToEmail(BreachType breachType) {
-  const char* recepient = "a.b@c.com";
-      printf("To: %s\n", recepient);
-  switch(breachType) {
-    case TOO_LOW:
-      printf("Hi, the temperature is too low\n");
-      break;
-    case TOO_HIGH:
-      printf("Hi, the temperature is too high\n");
-      break;
-    case NORMAL:
-      break;
-  }
+  // const char* recepient = "a.b@c.com";
+  //     printf("To: %s\n", recepient);
+  // switch(breachType) {
+  //   case TOO_LOW:
+  //     printf("Hi, the temperature is too low\n");
+  //     break;
+  //   case TOO_HIGH:
+  //     printf("Hi, the temperature is too high\n");
+  //     break;
+  //   case NORMAL:
+  //     break;
+  // }
 }
